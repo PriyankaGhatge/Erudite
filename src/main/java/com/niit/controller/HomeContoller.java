@@ -1,12 +1,30 @@
 package com.niit.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.erudite.dao.ProductDao;
+import com.niit.erudite.model.Category;
+import com.niit.erudite.model.Product;
+import com.niit.erudite.model.Supplier;
+
 @Controller
 public class HomeContoller {
+	@Autowired
+	ProductDao productdao;
 
+	@RequestMapping("/newproduct")
+	public ModelAndView newproduct() {
+		System.out.println("Product Controller");
+		Product p = new Product();
+		ModelAndView model = new ModelAndView("newproduct");
+		model.addObject("Productdata", p);
+		model.addObject("Catname", productdao.listcategory_name());
+		model.addObject("Suppname", productdao.listsupp_name());
+		return model;
+	}
 
 	@RequestMapping("/")
 	public ModelAndView home() {
@@ -24,6 +42,12 @@ public class HomeContoller {
 		ModelAndView model = new ModelAndView("register");
 		return model;
 	}
+	@RequestMapping("/login")
+	public ModelAndView login() {
+		ModelAndView model = new ModelAndView("login");
+		return model;
+	}
+	
 	@RequestMapping("/contact")
 	public ModelAndView contact() {
 		ModelAndView model = new ModelAndView("contact");
@@ -51,14 +75,18 @@ public class HomeContoller {
 	}
 	@RequestMapping("/category1")
 	public ModelAndView categoryone() {
+		Category c = new Category();
 		ModelAndView model = new ModelAndView("category1");
+		model.addObject("Categorydata",c);
 		return model;
 	}
 	@RequestMapping("/supplier")
 	public ModelAndView supplier() {
+		Supplier s = new Supplier();
 		ModelAndView model = new ModelAndView("supplier");
+		model.addObject("Supplierdata",s);
 		return model;
-	}
+		}
 	@RequestMapping("/category-full")
 	public ModelAndView categoryfull() {
 		ModelAndView model = new ModelAndView("category-full");

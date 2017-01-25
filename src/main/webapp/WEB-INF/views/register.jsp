@@ -9,49 +9,10 @@
 <spring:url value="/resources/css" var="css" />
 <spring:url value="/resources/js" var="js" />
 <spring:url value="/resources/img" var="img" />
-<spring:url value="/resources/fonts" var="fonts" />
+<spring:url value="/resources/css/fonts" var="fonts" />
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Obaju e-commerce template">
-    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
-    <meta name="keywords" content="">
-
-    <title>
-        Obaju : e-commerce template
-    </title>
-
-    <meta name="keywords" content="">
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-
-    <!-- styles -->
-    <link href="${css}/font-awesome.css" rel="stylesheet">
-    <link href="${css}/bootstrap.min.css" rel="stylesheet">
-    <link href="${css}/animate.min.css" rel="stylesheet">
-    <link href="${css}/owl.carousel.css" rel="stylesheet">
-    <link href="${css}/owl.theme.css" rel="stylesheet">
-
-    <!-- theme stylesheet -->
-    <link href="${css}/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-    <!-- your stylesheet with modifications -->
-    <link href="${css}/custom.css" rel="stylesheet">
-
-    <script src="${js}/respond.min.js"></script>
-
-    <link rel="shortcut icon" href="favicon.png">
-
-
-
-</head>
 
 <body>
    
@@ -91,15 +52,15 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="text"  value="Email"name="Email" class="form-control" id="email" path="email">
+                                <input type="text"  name="Email" class="form-control" id="email" path="email">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" value="Password" name="Password" class="form-control" id="password" path="password" >
+                                <input type="password"  name="Password" class="form-control" id="password" path="password" >
                             </div>
                              <div class="form-group">
                                 <label for="contact">Contact</label>
-                                <input class="form-control" value="Contact" name="Contact" id="contact" path="contact">
+                                <input class="form-control"  name="Contact" id="contact" path="contact">
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
@@ -108,35 +69,7 @@
                         </form>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="box">
-                        <h1>Login</h1>
-
-                        <p class="lead">Already our customer?</p>
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
-
-                        <hr>
-
-                        <form action="customer-orders" method="post">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password">
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-            </div>
+			 </div>
             <!-- /.container -->
         </div>
         <!-- /#content -->
