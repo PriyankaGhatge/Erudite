@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.erudite.dao.UserDao;
+import com.niit.erudite.model.BillingAddress;
+import com.niit.erudite.model.ShippingAddress;
 import com.niit.erudite.model.User;
 
 	
@@ -36,15 +38,20 @@ public class UserController {
 	
 	@Autowired
 	User user;
+	
+	@RequestMapping("/register" )
+	public ModelAndView register() {
+		System.out.println("user");
+		User u = new User();
+		BillingAddress billingAddress = new BillingAddress();
+		ShippingAddress shippingAddress = new ShippingAddress();
+		u.setBillingAddress(billingAddress);
+		u.setShippingAddress(shippingAddress);
 		
-		@RequestMapping(value= "/Register", method= RequestMethod.POST)
-		public ModelAndView register() {
-			System.out.println("inside controller");
-			User u = new User();
-			ModelAndView model = new ModelAndView("register");
-			model.addObject("Userdata",u);
-			return model;	
-			}
+		ModelAndView model = new ModelAndView("register");
+		model.addObject("Userdata", u);
+		return model;
+	}
 		
 		@RequestMapping(value = "/saveuser", method = RequestMethod.POST)
 		public String adduser(@Valid @ModelAttribute("Userdata")User reg,BindingResult result)
@@ -71,4 +78,18 @@ public class UserController {
 							// show login screen again.
 	
 	}
-	}
+		
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+

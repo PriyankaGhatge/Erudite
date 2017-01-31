@@ -43,8 +43,8 @@
 					<hr>
 
 
-					<c:url var="addaction" value="/newProduct/add"></c:url>
-					<form:form action="addProduct" commandName="Productdata" enctype="multipart/form-data">
+					<c:url var="addaction" value="/newproduct/add"></c:url>
+					<form:form action="addproduct" commandName="Productdata" enctype="multipart/form-data">
 
 						<div class="form-group">
 						<form:label path="product_name">Product Name</form:label>

@@ -43,7 +43,7 @@
 
                         <hr>
 
-                        <form action="saveuser" method="post" commandName="Userdata">
+                        <form:form action="saveuser" method="post" commandName="Userdata">
                             
                             <div class="form-group">
                                 <label for="name">Name</label>
@@ -62,18 +62,111 @@
                                 <label for="contact">Contact</label>
                                 <input class="form-control"  name="Contact" id="contact" path="contact">
                             </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
-                            </div>
+                            <br>
                             
-                        </form>
+                            <h2>Billing Address</h2>
+                            
+                            <form:label path="billingAddress.country">Country</form:label>
+							<div class="key">
+							<i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
+							<form:input path="billingAddress.country" />
+							<div class="clearfix"></div>
+						</div>
+						
+							<form:label path="billingAddress.state">State Name</form:label>
+							<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="billingAddress.state" />
+							<div class="clearfix"></div>
+						</div>
+                        
+                        <form:label path="billingAddress.city">City Name</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="billingAddress.city" />
+							<div class="clearfix"></div>
+						</div>
+						
+						<form:label path="billingAddress.addressline1">Address Line 1</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="billingAddress.addressline1" />
+							<div class="clearfix"></div>
+						</div>
+                 
+                        <form:label path="billingAddress.addressline2">Address Line 2</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="billingAddress.addressline2" />
+							<div class="clearfix"></div>
+						</div>
+                        
+                        <form:label path="billingAddress.zipcode">Zip Code</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>
+							<form:input path="billingAddress.zipcode" />
+							<div class="clearfix"></div>
+						</div>  
+						
+						<br>
+                            
+                            <h2>Shipping Address</h2>
+                            
+                            <form:label path="shippingAddress.country">Country</form:label>
+							<div class="key">
+							<i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
+							<form:input path="shippingAddress.country" />
+							<div class="clearfix"></div>
+						</div>
+						
+							<form:label path="shippingAddress.state">State Name</form:label>
+							<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="shippingAddress.state" />
+							<div class="clearfix"></div>
+						</div>
+                        
+                        <form:label path="shippingAddress.city">City Name</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="shippingAddress.city" />
+							<div class="clearfix"></div>
+						</div>
+						
+						<form:label path="shippingAddress.addressline1">Address Line 1</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="shippingAddress.addressline1" />
+							<div class="clearfix"></div>
+						</div>
+                 
+                        <form:label path="shippingAddress.addressline2">Address Line 2</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i>
+							<form:input path="shippingAddress.addressline2" />
+							<div class="clearfix"></div>
+						</div>
+                        
+                        <form:label path="shippingAddress.zipcode">Zip Code</form:label>
+						<div class="key">
+							<i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>
+							<form:input path="shippingAddress.zipcode" />
+							<div class="clearfix"></div>
+						</div>
+						
+						</div>
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                            </div>  
+						                      
+                      </form:form>
                     </div>
                 </div>
 			 </div>
             <!-- /.container -->
         </div>
         <!-- /#content -->
-</div>
+<!-- </div> -->
 
        <%@ include file = "shared/footer.jsp" %>
 </body>

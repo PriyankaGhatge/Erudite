@@ -22,7 +22,7 @@
     <meta name="keywords" content="">
 
     <title>
-        Erudite
+        Erudite-Books-Anywhere,Everywhere
     </title>
 
     <meta name="keywords" content="">
@@ -123,7 +123,7 @@
 
                 <a class="navbar-brand home" href="index" data-animate-hover="bounce">
                     <img src="${img}/logo.png" alt="Obaju logo" class="hidden-xs">
-                    <img src="${img}/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                    <img src="${img}/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Erudite - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -416,6 +416,6 @@
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
-
+<script src="${js}/angular.min.js"></script>
 </body>
 </html>

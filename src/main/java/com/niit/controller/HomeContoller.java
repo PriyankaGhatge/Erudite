@@ -6,9 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.erudite.dao.ProductDao;
+import com.niit.erudite.model.BillingAddress;
 import com.niit.erudite.model.Category;
 import com.niit.erudite.model.Product;
+import com.niit.erudite.model.ShippingAddress;
 import com.niit.erudite.model.Supplier;
+import com.niit.erudite.model.User;
 
 @Controller
 public class HomeContoller {
@@ -37,11 +40,26 @@ public class HomeContoller {
 		return model;
 	}
 	
-	@RequestMapping("/register")
+	/*@RequestMapping("/register")
 	public ModelAndView register() {
 		ModelAndView model = new ModelAndView("register");
 		return model;
-	}
+	}*/
+	/*@RequestMapping("/register" )
+	public ModelAndView register() {
+		BillingAddress billingAddress = new BillingAddress();
+		ShippingAddress shippingAddress = new ShippingAddress();
+	
+		User u = new User();
+		u.setBillingAddress(billingAddress);
+		u.setShippingAddress(shippingAddress);
+	
+		ModelAndView model = new ModelAndView("register");
+		model.addObject("Userdata", u);
+		return model;
+
+		}*/
+	
 	@RequestMapping("/login")
 	public ModelAndView login() {
 		ModelAndView model = new ModelAndView("login");
@@ -53,11 +71,7 @@ public class HomeContoller {
 		ModelAndView model = new ModelAndView("contact");
 		return model;
 	}
-	@RequestMapping("/404")
-	public ModelAndView nopage() {
-		ModelAndView model = new ModelAndView("404");
-		return model;
-	}
+	
 	@RequestMapping("/basket")
 	public ModelAndView basket() {
 		ModelAndView model = new ModelAndView("basket");
@@ -92,12 +106,7 @@ public class HomeContoller {
 		ModelAndView model = new ModelAndView("category-full");
 		return model;
 	}
-	@RequestMapping("/category-right")
-	public ModelAndView categoryright() {
-		ModelAndView model = new ModelAndView("category-right");
-		return model;
-	}
-	@RequestMapping("/checkout1")
+		@RequestMapping("/checkout1")
 	public ModelAndView checkout1() {
 		ModelAndView model = new ModelAndView("checkout1");
 		return model;
@@ -155,11 +164,6 @@ public class HomeContoller {
 	@RequestMapping("/text")
 	public ModelAndView text() {
 		ModelAndView model = new ModelAndView("text");
-		return model;
-	}
-	@RequestMapping("/text-right")
-	public ModelAndView textright() {
-		ModelAndView model = new ModelAndView("text-right");
 		return model;
 	}
 	

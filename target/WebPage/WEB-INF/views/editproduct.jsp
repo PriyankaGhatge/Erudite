@@ -39,12 +39,12 @@
                         <p class="text-muted">If you have any questions, please feel free to <a href="contact">contact us</a>, our customer service center is working for you 24/7.</p>
 
                         <hr>
-					<c:url var="addAction" value="editproduct/{product_id}"></c:url>
-					<form:form action="${contextPath}/addProduct" modelAttribute="Product" method="post">
+					<c:url var="addAction" value="editProduct/{product_id}"></c:url>
+					<form:form action="${contextPath}/addproduct" modelAttribute="Product" method="post" enctype="multipart/form-data">
 					
 					    <div class="form-group">
 						<form:label path="product_id"  >Product ID</form:label>
-					    <form:input type="text"  name="product_id" class="form-control" id="name" path="product_id" readonly="true"/>
+					    <form:input type="text"  name="product_id" class="form-control" id="name" path="product_id"/>
  						<div class="clearfix"></div> 
  						
  						</div> 
@@ -91,8 +91,7 @@
                         </div>
                             
                             
-                            
-						</form:form>
+                       </form:form>
 				</div> 
 
  			</div> 

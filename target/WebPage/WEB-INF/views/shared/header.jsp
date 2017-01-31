@@ -13,9 +13,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,10 +59,18 @@
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                    </li>
-                    <li><a href="register">Register</a>
-                    </li>
+                   
+                    <!-- when user logged in -->
+						<c:if test="${pageContext.request.userPrincipal.name != null }">
+								<li><a>Welcome:
+									${pageContext.request.userPrincipal.name}</a></li>
+							<li><a href="<c:url value='/Logout'/>">Logout</a></li>
+						</c:if>
+					<!-- when user not logged in -->
+						<c:if test="${pageContext.request.userPrincipal.name == null }">
+							<li><a href="<c:url value='/login'/>">Login</a></li>
+							<li><a href="<c:url value='/register'/>"> Register</a></li>
+      				   </c:if>
                     <li><a href="contact">Contact</a>
                     </li>
                     <li><a href="#">Recently viewed</a>
@@ -72,6 +78,7 @@
                 </ul>
             </div>
         </div>
+        
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
             <div class="modal-dialog modal-sm">
 
@@ -81,7 +88,7 @@
                         <h4 class="modal-title" id="Login">Customer login</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="customer-orders" method="post">
+                        <form action="customer-orders.jsp" method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="email-modal" placeholder="email">
                             </div>
@@ -96,7 +103,7 @@
                         </form>
 
                         <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="register"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                        <p class="text-center text-muted"><a href="register.jsp"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
 
                     </div>
                 </div>
@@ -104,7 +111,7 @@
         </div>
 
     </div>
-
+   
     <!-- *** TOP BAR END *** -->
 
     <!-- *** NAVBAR ***
@@ -212,14 +219,14 @@
                     </li>
 
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Ladies <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Admin <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <h5>Clothing</h5>
-                                            <ul>
+                                            <h5><a href="listproduct">Manage Products</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">T-shirts</a>
                                                 </li>
                                                 <li><a href="category">Shirts</a>
@@ -228,11 +235,11 @@
                                                 </li>
                                                 <li><a href="category">Accessories</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                         <div class="col-sm-3">
-                                            <h5>Shoes</h5>
-                                            <ul>
+                                            <h5><a href="listsupplier">Manage Suppliers</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Trainers</a>
                                                 </li>
                                                 <li><a href="category">Sandals</a>
@@ -241,11 +248,11 @@
                                                 </li>
                                                 <li><a href="category">Casual</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                         <div class="col-sm-3">
-                                            <h5>Accessories</h5>
-                                            <ul>
+                                            <h5><a href="listcategory">Manage Categories</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Trainers</a>
                                                 </li>
                                                 <li><a href="category">Sandals</a>
@@ -258,16 +265,18 @@
                                                 </li>
                                                 <li><a href="category">Casual</a>
                                                 </li>
-                                            </ul>
-                                            <h5>Looks and trends</h5>
-                                            <ul>
+                                            </ul> -->
+                                            </div>
+                                            <div class="col-sm-3">
+                                            <h5><a href="newproduct">Add Products</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Trainers</a>
                                                 </li>
                                                 <li><a href="category">Sandals</a>
                                                 </li>
                                                 <li><a href="category">Hiking shoes</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="banner">
@@ -289,7 +298,7 @@
                     </li>
 
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Recommendations <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
@@ -407,6 +416,6 @@
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
-
+<script src="${js}/angular.min.js"></script>
 </body>
 </html>
