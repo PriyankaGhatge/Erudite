@@ -381,7 +381,7 @@
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                    <a href="<c:url value='/cart/getCart_id'/>" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"> Cart</span></a>
                 </div>
                 <!--/.nav-collapse -->
 

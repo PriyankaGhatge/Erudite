@@ -25,7 +25,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.erudite.dao.UserDao;
 import com.niit.erudite.model.BillingAddress;
 import com.niit.erudite.model.ShippingAddress;
-import com.niit.erudite.model.User;
+import com.niit.erudite.model.UserCustomer;
 
 	
 @Controller
@@ -37,12 +37,12 @@ public class UserController {
 	UserDao userDao;
 	
 	@Autowired
-	User user;
+	UserCustomer user;
 	
 	@RequestMapping("/register" )
 	public ModelAndView register() {
 		System.out.println("user");
-		User u = new User();
+		UserCustomer u = new UserCustomer();
 		BillingAddress billingAddress = new BillingAddress();
 		ShippingAddress shippingAddress = new ShippingAddress();
 		u.setBillingAddress(billingAddress);
@@ -54,10 +54,10 @@ public class UserController {
 	}
 		
 		@RequestMapping(value = "/saveuser", method = RequestMethod.POST)
-		public String adduser(@Valid @ModelAttribute("Userdata")User reg,BindingResult result)
+		public String adduser(@Valid @ModelAttribute("Userdata")UserCustomer reg,BindingResult result)
 		{
 			userDao.save(reg);
-			return "register";
+			return "login";
 			
 		}
 		@RequestMapping("/loginerror")

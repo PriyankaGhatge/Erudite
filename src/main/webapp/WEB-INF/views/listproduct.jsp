@@ -15,13 +15,14 @@
 <html lang="en">
 <head>
 <style>
-th, td {
+ th, td {
     border-bottom: 1px solid black;
     padding: 15px;
     text-align: center;
-}
+} 
 
 </style>
+
 </head>
 <body>
 <%@ include file = "shared/header.jsp" %>
@@ -89,25 +90,25 @@ th, td {
 								
 								<tr ng-repeat="pr in products | filter:searchConditionprod">
 									<security:authorize access="hasRole('ROLE_ADMIN')">
-										<td>{{pr.product_id}}</td>
+										<td>{{pr.productid}}</td>
 									</security:authorize>
-										<td><a href="<c:url value='/infoproduct/{{pr.product_id}}'/>">
-											{{pr.product_name}}</td>
-<!-- 									<td>{{pr.productdescription}}</td> -->
+										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
+											{{pr.productname}}</td>
+<!-- 									<td>{{pr.product_description}}</td> -->
 										<td>{{pr.category_name}}</td>
 									<security:authorize access="hasRole('ROLE_ADMIN')">
 										<td>{{pr.supp_name}}</td>
 									</security:authorize>
-										<td>{{pr.product_price}}</td>
-									<c:url value="/resources/img/{{pr.product_name}}.jpg" var="imgg" />
+										<td>{{pr.productprice}}</td>
+									<c:url value="/resources/img/{{pr.productname}}.jpg" var="imgg" />
 
-										<td><a href="<c:url value='/infoproduct/{{pr.product_id}}'/>">
+										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
 									<img src="${imgg}" alt="image" height="80" width="80" /></td>
-										<td><a href="<c:url value='/infoproduct/{{pr.product_id}}'/>">
+										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
 										<span class="glyphicon glyphicon-info-sign"></span></a></td>
 									<security:authorize access="hasRole('ROLE_ADMIN')">
-										<td><a href="<c:url value='/editproduct/{{pr.product_id}}' />">Edit</a></td>
-										<td><a href="<c:url value='/removeproduct/{{pr.product_id}}' />">Delete</a></td>
+										<td><a href="<c:url value='/editproduct/{{pr.productid}}' />">Edit</a></td>
+										<td><a href="<c:url value='/removeproduct/{{pr.productid}}' />">Delete</a></td>
 									</security:authorize>
 								</tr>
 								

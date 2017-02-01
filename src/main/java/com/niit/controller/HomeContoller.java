@@ -11,7 +11,7 @@ import com.niit.erudite.model.Category;
 import com.niit.erudite.model.Product;
 import com.niit.erudite.model.ShippingAddress;
 import com.niit.erudite.model.Supplier;
-import com.niit.erudite.model.User;
+import com.niit.erudite.model.UserCustomer;
 
 @Controller
 public class HomeContoller {

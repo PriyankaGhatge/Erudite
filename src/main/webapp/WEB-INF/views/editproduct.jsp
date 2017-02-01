@@ -43,21 +43,21 @@
 					<form:form action="${contextPath}/addproduct" modelAttribute="Product" method="post" enctype="multipart/form-data">
 					
 					    <div class="form-group">
-						<form:label path="product_id"  >Product ID</form:label>
-					    <form:input type="text"  name="product_id" class="form-control" id="name" path="product_id"/>
+						<form:label path="productid"  >Product ID</form:label>
+					    <form:input type="text"  name="productid" class="form-control" id="name" path="productid"/>
  						<div class="clearfix"></div> 
  						
  						</div> 
  						<div class="form-group">
-						<form:label path="product_name" >Product Name</form:label>
- 						<form:input type="text" path="product_name"  name="product_name" class="form-control" id="name"  />
+						<form:label path="productname" >Product Name</form:label>
+ 						<form:input type="text" path="productname"  name="productname" class="form-control" id="name"  />
 						<div class="clearfix"></div> 
 						
  						</div> 
 					    <div class="form-group">
-						<form:label path="product_description" >Product Description</form:label>
+						<form:label path="productdescription" >Product Description</form:label>
  						<div class="key">
-						<form:input path="product_description" type="text" name="product_description" class="form-control" id="description" />
+						<form:input path="productdescription" type="text" name="productdescription" class="form-control" id="description" />
 						<div class="clearfix"></div> 
 						</div>
  						</div> 

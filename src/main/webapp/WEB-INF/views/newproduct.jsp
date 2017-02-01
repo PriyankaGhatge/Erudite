@@ -47,18 +47,18 @@
 					<form:form action="addproduct" commandName="Productdata" enctype="multipart/form-data">
 
 						<div class="form-group">
-						<form:label path="product_name">Product Name</form:label>
+						<form:label path="productname">Product Name</form:label>
 						<div class="key">
-						<form:input type="text" path="product_name" name="product_name" />
+						<form:input type="text" path="productname" name="productname" />
 						<div class="clearfix"></div>
 						</div>
 						</div>
 						
 						
 						<div class="form-group">
-						<form:label path="product_price">Product Price</form:label>
+						<form:label path="productprice">Product Price</form:label>
 						<div class="key">
-						<form:input type="text" path="product_price" name="product_price" />
+						<form:input type="text" path="productprice" name="productprice" />
 						<div class="clearfix"></div>
 						</div>
 						</div>
@@ -66,9 +66,9 @@
 
 
 						<div class="form-group">
-						<form:label path="product_description">Product Description</form:label>
+						<form:label path="productdescription">Product Description</form:label>
 						<div class="key">
-						<form:input type="text" path="product_description" name="product_description" />
+						<form:input type="text" path="productdescription" name="productdescription" />
 						<div class="clearfix"></div>
 						</div>
 						</div>

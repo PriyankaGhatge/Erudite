@@ -47,7 +47,7 @@ public class ProductController {
 		if (image != null && !image.isEmpty()) {
 			Path path = Paths
 					.get("E:\\Workspace_2\\EruditeFrontEnd\\src\\main\\webapp\\resources\\img\\"
-							+ reg.getProduct_name() + ".jpg");
+							+ reg.getProductname() + ".jpg");
 			try {
 				image.transferTo(new File(path.toString()));
 			} catch (IllegalStateException e) {
@@ -63,30 +63,35 @@ public class ProductController {
 		return "redirect:/listproduct";
 		}
 	
-	 @RequestMapping(value = "/listproduct")
+	/* @RequestMapping(value = "/listproduct")
 	 public String ViewProducts(Model model) {
 		System.out.println("list product");
 		model.addAttribute("productList", this.productdao.list());
 		return "/listproduct";
-	 }
+	 }*/
 	 
-	/*@RequestMapping(value = "/listproduct")
+	@RequestMapping(value = "/listproduct")
 	public ModelAndView productList() {
-		ModelAndView mv=new ModelAndView("listproduct");
+		System.out.println("abc");
+		ModelAndView mv=new ModelAndView("/listproduct");
+		System.out.println("cde");
 		mv.addObject("product",product);
+		System.out.println("efg");
 		mv.addObject("productList", this.productdao.list());
+		System.out.println("hij");
 		return mv;
-	}*/
+	}
 	
-	@RequestMapping(value = "/removeproduct/{product_id}")
-	public String DeleteProducts(@PathVariable("product_id") int id) {
+	
+	@RequestMapping(value = "/removeproduct/{productid}")
+	public String DeleteProducts(@PathVariable("productid") int id) {
 		this.productdao.delete(id);
 		return "redirect:/listproduct";
 
 	}
 	
-	@RequestMapping("/editproduct/{product_id}")
-	public String editProducts(@PathVariable("product_id") int id, Model model) {
+	@RequestMapping("/editproduct/{productid}")
+	public String editProducts(@PathVariable("productid") int id, Model model) {
 		model.addAttribute("Product", this.productdao.get(id));
 		model.addAttribute("productList", this.productdao.list());
 		model.addAttribute("Catname", productdao.listcategory_name());
@@ -99,8 +104,8 @@ public class ProductController {
 		return productdao.list();
 	}
 	
-	@RequestMapping("/infoproduct/{product_id}")
-	public ModelAndView getRecord(@PathVariable("product_id") int id, Model model) {
+	@RequestMapping("/infoproduct/{productid}")
+	public ModelAndView getRecord(@PathVariable("productid") int id, Model model) {
 		Product productObject = productdao.get(id);
 		return new ModelAndView("singleProduct", "productObject", productObject);
 	}

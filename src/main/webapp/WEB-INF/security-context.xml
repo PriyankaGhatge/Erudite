@@ -21,8 +21,7 @@
 		<security:intercept-url pattern="/addproduct/**"
 			access="hasAnyRole('ROLE_ADMIN')" />
 
-		<security:intercept-url pattern="/listproduct/**"
-			access="hasAnyRole('ROLE_ADMIN')" />
+		
 
 		<!-- Supplier Security -->
 		<security:intercept-url pattern="/supplier/**"
@@ -91,8 +90,8 @@
 		<security:authentication-provider>
 			<security:jdbc-user-service
 				data-source-ref="dataSource"
-				authorities-by-username-query="Select name, role from User WHERE name = ?"
-				users-by-username-query="Select name, password,'true' from User WHERE name = ?" />
+				authorities-by-username-query="Select username, role from UserCustomer WHERE username = ?"
+				users-by-username-query="Select username, password,'true' from UserCustomer WHERE username = ?" />
 		</security:authentication-provider>
 	</security:authentication-manager>
 
