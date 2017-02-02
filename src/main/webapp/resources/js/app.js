@@ -5,12 +5,12 @@ var app = angular
 				function($scope, $http) {
 					
 					$scope.listProduct = function() {
-						
+						// alert('before contol call');
 						$http
 								.get(
-										'/EruditeFrontEnd/listproductjson')
+										'/EruditeFrntEnd/listproductjson')
 								.success(function(data) {
-									
+									// alert('after contol call');
 
 									$scope.products = data;
 									console.log(data);
@@ -18,4 +18,5 @@ var app = angular
 								})
 
 					}
+
 				})

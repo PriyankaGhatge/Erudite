@@ -22,7 +22,7 @@
     <meta name="keywords" content="">
 
     <title>
-        Erudite
+        Erudite-Books-Anywhere,Everywhere
     </title>
 
     <meta name="keywords" content="">
@@ -123,7 +123,7 @@
 
                 <a class="navbar-brand home" href="index" data-animate-hover="bounce">
                     <img src="${img}/logo.png" alt="Obaju logo" class="hidden-xs">
-                    <img src="${img}/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                    <img src="${img}/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Erudite - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -381,7 +381,7 @@
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                    <a href="<c:url value='/cart/getCart_id'/>" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"> Cart</span></a>
                 </div>
                 <!--/.nav-collapse -->
 

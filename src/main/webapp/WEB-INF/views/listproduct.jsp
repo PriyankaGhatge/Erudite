@@ -40,14 +40,14 @@
 	<c:forEach items="${productList}" var="pr">
 		<tr>
 
-			<td><c:out value="${pr.product_id}" /></td>
-			<td><c:out value="${pr.product_name}" /></td>
-			<td><c:out value="${pr.product_description}" /></td>
-			<c:url value="/resources/img/${pr.product_name}.jpg" var="imgg"/>
+			<td><c:out value="${pr.productid}" /></td>
+			<td><c:out value="${pr.productname}" /></td>
+			<td><c:out value="${pr.productdescription}" /></td>
+			<c:url value="/resources/img/${pr.productname}.jpg" var="imgg"/>
 			<td><img src = "${imgg}" alt="Image" height="80" width="80"></td>
-			<td><a href="<c:url value='/editproduct/${pr.product_id}' />">Edit</a></td>
+			<td><a href="<c:url value='/editproduct/${pr.productid}' />">Edit</a></td>
 			<td><a
-				href="<c:url value='/removeproduct/${pr.product_id}' />">Delete</a></td>
+				href="<c:url value='/removeproduct/${pr.productid}' />">Delete</a></td>
 		</tr>
 	</c:forEach>
 </table>
@@ -66,9 +66,9 @@
 			<div class="login">
 				<div class="main-agi">
 					<div class="form-w3agile">
-						<h3>Product List</h3>
+						<h3>Product List{{10+10}}</h3>
 						<div class="table-responsive">
-							<table class="tg">
+							<table class="tg" border=1>
 								<tr>
 									<security:authorize access="hasRole('ROLE_ADMIN')">
 										<th width="80">Product ID</th>
@@ -88,27 +88,27 @@
 									</security:authorize>
 								</tr>
 								
-								<tr ng-repeat="pr in products | filter:searchConditionprod">
+								<tr ng-repeat="p in products | filter:searchConditionprod">
 									<security:authorize access="hasRole('ROLE_ADMIN')">
 										<td>{{pr.productid}}</td>
 									</security:authorize>
-										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
+										<td><a href="<c:url value='/infoproduct/{{p.productid}}'/>"></a>
 											{{pr.productname}}</td>
-<!-- 									<td>{{pr.product_description}}</td> -->
+ 									<td>{{pr.productdescription}}</td> 
 										<td>{{pr.category_name}}</td>
 									<security:authorize access="hasRole('ROLE_ADMIN')">
 										<td>{{pr.supp_name}}</td>
 									</security:authorize>
 										<td>{{pr.productprice}}</td>
-									<c:url value="/resources/img/{{pr.productname}}.jpg" var="imgg" />
+									<c:url value="/resources/img/{{p.productname}}.jpg" var="imgg" />
 
-										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
+										<td><a href="<c:url value='/infoproduct/{{p.productid}}'/>"></a>
 									<img src="${imgg}" alt="image" height="80" width="80" /></td>
-										<td><a href="<c:url value='/infoproduct/{{pr.productid}}'/>">
+										<td><a href="<c:url value='/infoproduct/{{p.productid}}'/>">
 										<span class="glyphicon glyphicon-info-sign"></span></a></td>
 									<security:authorize access="hasRole('ROLE_ADMIN')">
-										<td><a href="<c:url value='/editproduct/{{pr.productid}}' />">Edit</a></td>
-										<td><a href="<c:url value='/removeproduct/{{pr.productid}}' />">Delete</a></td>
+										<td><a href="<c:url value='/editproduct/{{p.productid}}' />">Edit</a></td>
+										<td><a href="<c:url value='/removeproduct/{{p.productid}}' />">Delete</a></td>
 									</security:authorize>
 								</tr>
 								
@@ -121,9 +121,13 @@
 		</div>
 	</div>
  
- 
+  
+  
+  
+  
+  <script src="${js}/app.js"></script>
 <%@ include file = "shared/footer.jsp" %>
-<script src="${js}/app.js"></script>
+
 
 </body>
 </html>

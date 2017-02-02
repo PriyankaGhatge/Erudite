@@ -9,6 +9,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,11 +26,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.erudite.dao.ProductDao;
 import com.niit.erudite.model.Product;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
-
 
 @Controller
 public class ProductController {
+	
+	public static Logger log = LoggerFactory.getLogger(ProductController.class);
+
 	
 	@Autowired
 	ProductDao productdao;
@@ -63,22 +66,24 @@ public class ProductController {
 		return "redirect:/listproduct";
 		}
 	
-	/* @RequestMapping(value = "/listproduct")
+	/*//for displaying list without angularjs
+	 @RequestMapping(value = "/listproduct")
 	 public String ViewProducts(Model model) {
 		System.out.println("list product");
 		model.addAttribute("productList", this.productdao.list());
 		return "/listproduct";
 	 }*/
 	 
+	 //for displaying list with angularjs
 	@RequestMapping(value = "/listproduct")
 	public ModelAndView productList() {
-		System.out.println("abc");
+		
 		ModelAndView mv=new ModelAndView("/listproduct");
-		System.out.println("cde");
+		
 		mv.addObject("product",product);
-		System.out.println("efg");
+		
 		mv.addObject("productList", this.productdao.list());
-		System.out.println("hij");
+		
 		return mv;
 	}
 	
