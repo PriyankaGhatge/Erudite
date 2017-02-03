@@ -8,7 +8,7 @@ var myapp = angular
 						// alert('before contol call');
 						$http
 								.get(
-										'/EruditeFrontEnd/listproductjson')
+										'/WebPage/listproductjson')
 								.success(function(data) {
 									// alert('after contol call');
 
@@ -21,7 +21,7 @@ var myapp = angular
 					$scope.addToCart = function(productid) {
 
 						$http.put(
-								'/EruditeFrontEnd/cart/add/'
+								'/WebPage/cart/add/'
 										+ productid).success(function() {
 
 							alert('Added Successfully to the cart!');
@@ -30,7 +30,7 @@ var myapp = angular
 
 					$scope.refreshCart = function() {
 						$http.get(
-								'/EruditeFrontEnd/cart/getCart/'
+								'/WebPage/cart/getCart/'
 										+ $scope.cart_id).success(
 								function(data) {
 									$scope.cart = data;
@@ -46,7 +46,7 @@ var myapp = angular
 
 					$scope.removeFromCart = function(cartitem_id) {
 						$http.put(
-								'EruditeFrontEnd/cart/removecartitem/'
+								'WebPage/cart/removecartitem/'
 										+ cartitem_id).success(function() {
 							$scope.refreshCart();
 							alert('Removed Successfully from the cart!');
@@ -56,7 +56,7 @@ var myapp = angular
 					$scope.clearCart = function() {
 
 						$http.put(
-								'/EruditeFrontEnd/cart/removeAllItems/'
+								'/WebPage/cart/removeAllItems/'
 										+ $scope.cart_id)
 
 						.success(function() {

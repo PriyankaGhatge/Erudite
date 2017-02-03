@@ -1,3 +1,6 @@
+
+// search for products
+
 var app = angular
 		.module("prodapp", [])
 		.controller(
@@ -5,12 +8,12 @@ var app = angular
 				function($scope, $http) {
 					
 					$scope.listProduct = function() {
-						// alert('before contol call');
+						 //alert('before contol call');
 						$http
 								.get(
-										'/EruditeFrntEnd/listproductjson')
+										'/WebPage/listproductsjson')
 								.success(function(data) {
-									// alert('after contol call');
+									 //alert('after contol call');
 
 									$scope.products = data;
 									console.log(data);

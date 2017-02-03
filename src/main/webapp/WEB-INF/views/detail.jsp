@@ -393,8 +393,8 @@
                                     <img src="${img}/product2.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Laxmi Prasad</h3>
+                                    <p class="price">375</p>
                                 </div>
                             </div>
                             <!-- /.product -->
@@ -420,8 +420,8 @@
                                     <img src="${img}/product1.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Murder Of Roger Ackroyd</h3>
+                                    <p class="price">350</p>
                                 </div>
                             </div>
                             <!-- /.product -->
@@ -448,8 +448,8 @@
                                     <img src="${img}/product3.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Simply Nigella</h3>
+                                    <p class="price">750</p>
 
                                 </div>
                             </div>

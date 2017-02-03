@@ -39,7 +39,7 @@
                         <p class="text-muted">If you have any questions, please feel free to <a href="contact">contact us</a>, our customer service center is working for you 24/7.</p>
 
                         <hr>
-					<c:url var="addAction" value="editProduct/{product_id}"></c:url>
+					<c:url var="addAction" value="editProduct/{productid}"></c:url>
 					<form:form action="${contextPath}/addproduct" modelAttribute="Product" method="post" enctype="multipart/form-data">
 					
 					    <div class="form-group">

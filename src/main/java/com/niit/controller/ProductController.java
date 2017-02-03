@@ -65,26 +65,10 @@ public class ProductController {
 		productdao.save(reg);
 		return "redirect:/listproduct";
 		}
-	
-	/*//for displaying list without angularjs
-	 @RequestMapping(value = "/listproduct")
-	 public String ViewProducts(Model model) {
-		System.out.println("list product");
+	@RequestMapping(value = "/listproduct")
+	public String ViewProducts(Model model) {
 		model.addAttribute("productList", this.productdao.list());
 		return "/listproduct";
-	 }*/
-	 
-	 //for displaying list with angularjs
-	@RequestMapping(value = "/listproduct")
-	public ModelAndView productList() {
-		
-		ModelAndView mv=new ModelAndView("/listproduct");
-		
-		mv.addObject("product",product);
-		
-		mv.addObject("productList", this.productdao.list());
-		
-		return mv;
 	}
 	
 	
@@ -104,7 +88,7 @@ public class ProductController {
 		return "editproduct";
 	}
 	
-	@RequestMapping(value = "/listproductjson")
+	@RequestMapping(value = "/listproductsjson")
 	public @ResponseBody List<Product> listProdInJSON() {
 		return productdao.list();
 	}
@@ -112,7 +96,7 @@ public class ProductController {
 	@RequestMapping("/infoproduct/{productid}")
 	public ModelAndView getRecord(@PathVariable("productid") int id, Model model) {
 		Product productObject = productdao.get(id);
-		return new ModelAndView("singleProduct", "productObject", productObject);
+		return new ModelAndView("singleproduct", "productObject", productObject);
 	}
 
 }
