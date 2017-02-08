@@ -6,28 +6,28 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.niit.erudite.dao.CartDao;
-import com.niit.erudite.dao.OrderDao;
+import com.niit.erudite.dao.CustomerOrderDao;
 import com.niit.erudite.model.Cart;
-import com.niit.erudite.model.Order;
+import com.niit.erudite.model.CustomerOrder;
 import com.niit.erudite.model.UserCustomer;
 
 @Controller
-public class OrderController {
+public class CustomerOrderController {
 
 	@Autowired
 	CartDao cartdao;
 	
 	@Autowired
-	OrderDao orderdao;
+	CustomerOrderDao orderdao;
 	
 	@RequestMapping("/order/{cart_id}")
     public String createOrder(@PathVariable("cart_id") int cart_id){
-        Order order = new Order();
+        CustomerOrder order = new CustomerOrder();
         Cart cart = cartdao.getCartByCartId(cart_id);
         //UPDATE CARTID FOR CUSTOMERORDER - SET CARTID
         order.setCart(cart);
 	
-        UserCustomer customer = cart.getUserCustomer();
+        UserCustomer customer = cart.getUsercustomer();
         //SET CUSTOMERID
        order.setUser(customer);
         //SET BILLINGADDRESSID
