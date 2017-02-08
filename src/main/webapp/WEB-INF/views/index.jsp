@@ -14,33 +14,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- <style>
-html { 
-  background: url(img/background1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-</style> -->
-<!-- <style>
-body{
-	 
-            background: url("img/background1.jpg") repeat 0 0;
-        }
-
-        body { 
-            background: url("../img/background1.jpg") repeat 0 0;
-        }
-
-        body { 
-            background-image: url("../img/background1.jpg") repeat 0 0;
-        }
-}
-</style> -->
-
 </head>
-
+<style type="text/css">
+body {
+	background: url("${img}/background1.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
 
 <body>
  
@@ -103,7 +84,7 @@ body{
                                 </div>
 
                                 <h3><a href="#">100% satisfaction guaranteed</a></h3>
-                                <p>Free returns on everything for 3 months.</p>
+                                <p>Free returns on everything for 1 month.</p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +105,7 @@ body{
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Hot this week</h2>
+                            <h2>Best Selling Writers</h2>
                         </div>
                     </div>
                 </div>
@@ -137,22 +118,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product1.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product1_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product1.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Fur coat with very but very very long name</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">George RR Martin</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -165,22 +146,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product2_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
+                                    <h3><a href="detail">Amish Tripathi</a></h3>
+                                    <p class="price"> </p>
                                 </div>
                                 <!-- /.text -->
 
@@ -211,22 +192,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product3_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">Dan Brown</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -239,22 +220,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product3_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">Harry Potter</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -267,22 +248,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product2_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">White Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">Chetan Bhagat</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
 
@@ -301,22 +282,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product1.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product1_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product1.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Fur coat</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">Stieg Larsson</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
 
@@ -337,22 +318,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product2_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product2.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
+                                    <h3><a href="detail">Paulo Coelho</a></h3>
+                                    <p class="price"> </p>
                                 </div>
                                 <!-- /.text -->
 
@@ -383,22 +364,22 @@ body{
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="detail">
-                                                <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="detail">
-                                                <img src="${img}/product3_2.jpg" alt="" class="img-responsive">
+                                                <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="detail" class="invisible">
-                                    <img src="${img}/product3.jpg" alt="" class="img-responsive">
+                                    <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail">Enid Blyton</a></h3>
+                                    <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
                             </div>

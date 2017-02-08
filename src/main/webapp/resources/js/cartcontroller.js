@@ -4,20 +4,14 @@ var myapp = angular
 				'productsController',
 				function($scope, $http) {
 					
-					$scope.listProduct = function() {
-						// alert('before contol call');
+					$scope.getProducts = function() {
 						$http
 								.get(
-										'/WebPage/listproductjson')
+										'WebPage/listproductsjson')
 								.success(function(data) {
-									// alert('after contol call');
-
-									$scope.products = data;
-									console.log(data);
-									console.log('after contol call1');
+									$scope.product1 = data;
 								})
 					}
-
 					$scope.addToCart = function(productid) {
 
 						$http.put(
@@ -33,20 +27,22 @@ var myapp = angular
 								'/WebPage/cart/getCart/'
 										+ $scope.cart_id).success(
 								function(data) {
+									
 									$scope.cart = data;
 								})
+								
 					}
 
 					$scope.getCart = function(cart_id) {
 						$scope.cart_id = cart_id;
-						// $scope.refreshCart(cart_id);
+						 //$scope.refreshCart(cart_id);
 						$scope.refreshCart();
-						// alert('Successfully refreshed the cart!');
+						 //alert('Successfully refreshed the cart!');
 					}
 
 					$scope.removeFromCart = function(cartitem_id) {
 						$http.put(
-								'WebPage/cart/removecartitem/'
+								'/WebPage/cart/removecartitem/'
 										+ cartitem_id).success(function() {
 							$scope.refreshCart();
 							alert('Removed Successfully from the cart!');
@@ -68,11 +64,10 @@ var myapp = angular
 
 					$scope.calculateGrandTotal = function() {
 						var grandTotal = 0
-						for (var i = 0; i < $scope.cart.cartItems.length; i++) {
+						for (var i = 0; i < $scope.cart.cartitems.length; i++) {
 							grandTotal = grandTotal
-									+ $scope.cart.cartItems[i].totalprice;
-							;
-						}
+									+ $scope.cart.cartitems[i].totalprice;
+							;}
 						return grandTotal;
 					}
 				});

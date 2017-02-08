@@ -36,7 +36,7 @@ public class OrderController {
        order.setShippingAddress(customer.getShippingAddress());
 
         orderdao.addCustomerOrder(order);
-        return "redirect:/checkout?cartId=" + cart_id;
+        return "redirect:/checkout?cart_id=" + cart_id;
 
 	}
 	

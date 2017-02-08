@@ -13,6 +13,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<style type="text/css">
+body {
+	background: url("${img}/background2.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	
+	background-attachment: fixed;
+}
+</style>
 <body>
 <%@ include file = "shared/header.jsp" %>
 <h3>List Of Suppliers</h3>

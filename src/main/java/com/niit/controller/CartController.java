@@ -26,8 +26,8 @@ public class CartController {
 	@RequestMapping(value="/**/cart/**/getCart_id")
 	public String getCartId(Model model) {
 		User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		String userid = user.getUsername();
-		UserCustomer user1 = userdao.get(userid);
+		String id = user.getUsername();
+		UserCustomer user1 = userdao.get(id);
 		model.addAttribute("cart_id", user1.getCart().getCart_id());
 		return "cart";
 	}

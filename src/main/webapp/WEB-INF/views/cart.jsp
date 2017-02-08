@@ -19,7 +19,7 @@
 </head>
 <style type="text/css">
 body {
-	background: url("${img}/profilebg.jpg") no-repeat 0px 0px;
+	
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
@@ -103,13 +103,13 @@ input[type=text] {
 									<th width="160">Total Price</th>
 									<th width="120">Action</th>
 								</tr>
-								<tr ng-repeat="cartItem in cart.cartItems">
-									<td>{{cartItem.product.product_name}}</td>
+								<tr ng-repeat="cartItem in cart.cartitems">
+									<td>{{cartItem.product.productname}}</td>
 									<td>{{cartItem.quantity}}</td>
-									<td>{{cartItem.product.product_price}}</td>
+									<td>{{cartItem.product.productprice}}</td>
 									<td>{{cartItem.totalprice}}</td>
 									<td><a href="#" class="label label-danger"
-										ng-click="removeFromCart(cartItem.cartitemid)"> <span
+										ng-click="removeFromCart(cartItem.cartitem_id)"> <span
 											class="glyphicon glyphicon-remove"></span> Remove
 									</a></td>
 								</tr>
@@ -144,6 +144,7 @@ input[type=text] {
 			</div>
 		</div>
 	</div>
+
 <script src="${js}/cartcontroller.js"></script>
 
 	

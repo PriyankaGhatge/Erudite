@@ -41,17 +41,20 @@ public class CartItemController {
 	public void addCartItem(@PathVariable(value = "productid") int productid) {
 		
 		User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		
 		String username = user.getUsername();
+		
 		UserCustomer user1 = userdao.get(username);
+		
 		Cart cart = user1.getCart();
 
-		List<CartItem> cartItems = cart.getCartitem();
-		System.out.println(cartItems.isEmpty());
+		List<CartItem> cartitems = cart.getCartitems();
+		System.out.println(cartitems.isEmpty());
 		Product product = productdao.get(productid);
-
-		for (int i = 0; i < cartItems.size(); i++) {
-			CartItem cartItem = cartItems.get(i);
-
+		
+		for (int i = 0; i < cartitems.size(); i++) {
+			CartItem cartItem = cartitems.get(i);
+			
 			if (product.getProductid() == cartItem.getProduct().getProductid()) {
 				cartItem.setQuantity(cartItem.getQuantity() + 1);
 				cartItem.setTotalprice(cartItem.getQuantity() * cartItem.getProduct().getProductprice());
@@ -68,7 +71,7 @@ public class CartItemController {
 		System.out.println(cartItem.getTotalprice());
 	}
 
-	@RequestMapping("/cart/removecartitem/{cartitemid}")
+	@RequestMapping("/cart/removecartitem/{cartitem_id}")
 	@ResponseStatus(value = HttpStatus.NO_CONTENT)
 	public void removeCartItem(@PathVariable(value = "cartitem_id") int cartitem_id) {
 		System.out.println("removing item");

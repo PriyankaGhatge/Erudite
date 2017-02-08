@@ -12,12 +12,32 @@
 <spring:url value="/resources/css/fonts" var="fonts" />
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body {
+	background: url("${img}/background2.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td, {
+    text-align: center;
+    padding: 8px;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2}	
+
+</style>
 
 <body>
 <%@ include file = "shared/header.jsp" %>
 <h3>List Of Categories</h3>
 
-<table class="tg" border=1 align="center">
+<table  border=1   class="w3-table-all w3-centered">
 	<tr>
 		<th width="80">Category ID</th>
 		<th width="120">Category Name</th>
