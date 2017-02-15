@@ -71,7 +71,7 @@
 							<li><a href="<c:url value='/login'/>">Login</a></li>
 							<li><a href="<c:url value='/register'/>"> Register</a></li>
       				   </c:if>
-                    <li><a href="contact">Contact</a>
+                    <li><a href="<c:url value='/contact'/>">Contact</a>
                     </li>
                     <li><a href="#">Recently viewed</a>
                     </li>
@@ -121,7 +121,7 @@
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand home" href="index" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="<c:url value='/index'/>" data-animate-hover="bounce">
                     <img src="${img}/logo.png" alt="Obaju logo" class="hidden-xs">
                     <img src="${img}/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Erudite - go to homepage</span>
                 </a>
@@ -134,8 +134,8 @@
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
                     </button>
-                    <a class="btn btn-default navbar-toggle" href="basket">
-                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
+                    <a class="btn btn-default navbar-toggle" href="<c:url value='/cart'/>">
+                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">Cart</span>
                     </a>
                 </div>
             </div>
@@ -144,7 +144,7 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="index">Home</a>
+                    <li class="active"><a href="<c:url value='/index'/>">Home</a>
                     </li>
                     <li class="dropdown yamm-fw">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Books <b class="caret"></b></a>
@@ -152,9 +152,9 @@
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5>Auto/Biographies</h5>
-                                            <ul>
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Auto/Biographies</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Arts and Entertainment</a>
                                                 </li>
                                                 <li><a href="category">Scientists</a>
@@ -163,11 +163,11 @@
                                                 </li>
                                                 <li><a href="category">Religious</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5>Fiction</h5>
-                                            <ul>
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Fiction</a></h5>
+                                           <!--  <ul>
                                                 <li><a href="category">Action and Adventure</a>
                                                 </li>
                                                 <li><a href="category">Romance</a>
@@ -176,11 +176,11 @@
                                                 </li>
                                                 <li><a href="category">Science Fiction</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5>Political Science</h5>
-                                            <ul>
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Politics</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Governments</a>
                                                 </li>
                                                 <li><a href="category">Political Processes</a>
@@ -189,27 +189,40 @@
                                                 </li>
                                                 <li><a href="category">Political Ideologies</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5>Cooking</h5>
-                                            <ul>
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Cooking</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Courses and Dishes</a>
                                                 </li>
                                                 <li><a href="category">Regional and Ethic</a>
                                                 </li>
                                                 <li><a href="category">Health and Healing</a>
                                                 </li>
-                                            </ul>
-                                            <h5>Health/Fitness</h5>
-                                            <ul>
+                                            </ul> -->
+                                            </div>
+                                             <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Health/Fitness</a></h5>
+                                            <!-- <ul>
                                                 <li><a href="category">Diets</a>
                                                 </li>
                                                 <li><a href="category">Diseases</a>
                                                 </li>
                                                 <li><a href="category">Weight Loss</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Satire</a></h5>
+                                           <!--  <ul>
+                                                <li><a href="category">Diets</a>
+                                                </li>
+                                                <li><a href="category">Diseases</a>
+                                                </li>
+                                                <li><a href="category">Weight Loss</a>
+                                                </li>
+                                            </ul> -->
                                         </div>
                                     </div>
                                 </div>
@@ -224,61 +237,33 @@
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5><a href="listproduct">Manage Products</a></h5>
-                                            <!-- <ul>
-                                                <li><a href="category">T-shirts</a>
-                                                </li>
-                                                <li><a href="category">Shirts</a>
-                                                </li>
-                                                <li><a href="category">Pants</a>
-                                                </li>
-                                                <li><a href="category">Accessories</a>
-                                                </li>
-                                            </ul> -->
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listproduct'/>">Manage Products</a></h5>
+                                            
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5><a href="listsupplier">Manage Suppliers</a></h5>
-                                            <!-- <ul>
-                                                <li><a href="category">Trainers</a>
-                                                </li>
-                                                <li><a href="category">Sandals</a>
-                                                </li>
-                                                <li><a href="category">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category">Casual</a>
-                                                </li>
-                                            </ul> -->
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listsupplier'/>">Manage Suppliers</a></h5>
+                                            
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5><a href="listcategory">Manage Categories</a></h5>
-                                            <!-- <ul>
-                                                <li><a href="category">Trainers</a>
-                                                </li>
-                                                <li><a href="category">Sandals</a>
-                                                </li>
-                                                <li><a href="category">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category">Casual</a>
-                                                </li>
-                                                <li><a href="category">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category">Casual</a>
-                                                </li>
-                                            </ul> -->
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/listcategory'/>">Manage Categories</a></h5>
+                                            
                                             </div>
-                                            <div class="col-sm-3">
-                                            <h5><a href="newproduct">Add Products</a></h5>
-                                            <!-- <ul>
-                                                <li><a href="category">Trainers</a>
-                                                </li>
-                                                <li><a href="category">Sandals</a>
-                                                </li>
-                                                <li><a href="category">Hiking shoes</a>
-                                                </li>
-                                            </ul> -->
+                                            <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/newproduct'/>">Add New Products</a></h5>
+                                            
                                         </div>
-                                        <div class="col-sm-3">
+                                        
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/supplier'/>">Add New Suppliers</a></h5>
+                                            
+                                        </div>
+                                        
+                                        <div class="col-sm-2">
+                                            <h5><a href="<c:url value='/category1'/>">Add New Categories</a></h5>
+                                            
+                                        </div>
+                                        <%-- <div class="col-sm-3">
                                             <div class="banner">
                                                 <a href="#">
                                                     <img src="${img}/banner.jpg" class="img img-responsive" alt="">
@@ -289,7 +274,7 @@
                                                     <img src="${img}/banner2.jpg" class="img img-responsive" alt="">
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> --%>
                                     </div>
                                 </div>
                                 <!-- /.yamm-content -->

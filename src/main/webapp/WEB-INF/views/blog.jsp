@@ -53,42 +53,42 @@
                     </div>
 
                     <div class="post">
-                        <h2><a href="post">Fashion now</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
+                        <h2><a href="post">Importance Of Reading</a></h2>
+                        <p class="author-category">By <a href="#">JJ Wong</a> in <a href="">Articles</a>
                         </p>
                         <hr>
                         <p class="date-comments">
-                            <a href="post"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            <a href="post"><i class="fa fa-comment-o"></i> 8 Comments</a>
+                            <a href="post"><i class="fa fa-calendar-o"></i> June 20, 2015</a>
+                            
                         </p>
                         <div class="image">
                             <a href="post">
                                 <img src="${img}/blog2.jpg" class="img-responsive" alt="Example blog post alt">
                             </a>
                         </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
+                        <p class="intro">Everyone knows that reading is important, but have you ever asked yourself why that is so? In this post, I will list out 8 reasons why reading is important. 
+                        I hope you can really find out the reason why reading is so important for you, so you can get a brand new desire to explore the world of reading.</p>
                         <p class="read-more"><a href="post" class="btn btn-primary">Continue reading</a>
                         </p>
                     </div>
 
 
                     <div class="post">
-                        <h2><a href="post">Who is who - example blog post</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
+                        <h2><a href="post"> Surging popularity of E-reading</a></h2>
+                        <p class="author-category">By <a href="#">Anupama Roy</a> in <a href="">About Minimal</a>
                         </p>
                         <hr>
                         <p class="date-comments">
-                            <a href="post"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            <a href="post"><i class="fa fa-comment-o"></i> 8 Comments</a>
+                            <a href="post"><i class="fa fa-calendar-o"></i> January 20, 2016</a>
+                            
                         </p>
                         <div class="image">
                             <a href="post">
                                 <img src="${img}/blog.jpg" class="img-responsive" alt="Example blog post alt">
                             </a>
                         </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
+                        <p class="intro">For all those readers jealous of <strong>Belle's Library</strong>, e-reading is the next Best thing for you,
+                        As you don't have to worry about getting a new Book Case for your new Collection,just keep them on your E-Reader .</p>
                         <p class="read-more"><a href="post" class="btn btn-primary">Continue reading</a>
                         </p>
                     </div>

@@ -13,6 +13,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<style>
+body {
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
+</head>
 <body>
 <%@ include file = "shared/header.jsp" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
@@ -30,8 +39,9 @@
 
                 </div>
 
-                <div class="col-md-6">
-                    <div class="box">
+                <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+						<div class="txt-center">
+						
                         <h1>Product</h1>
 
                         <p class="lead">Need to make some changes ?</p>

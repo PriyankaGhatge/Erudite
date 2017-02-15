@@ -14,7 +14,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+body {
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
 <body>
    
     <%@ include file = "shared/header.jsp" %>
@@ -72,7 +78,7 @@
 									<security:authorize access="hasRole('ROLE_USER')">
 
 										<a ng-click="addToCart(${productObject.productid})"
-											data-text="Add To Cart" class="my-cart-yash item_add">Add
+											data-text="Add To Cart"  class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add
 											To Cart</a>
 									</security:authorize>
 

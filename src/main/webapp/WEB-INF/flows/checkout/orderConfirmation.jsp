@@ -9,7 +9,7 @@
 
 <spring:url value="/resources/css" var="css" />
 <spring:url value="/resources/js" var="js" />
-<spring:url value="/resources/images" var="img" />
+<spring:url value="/resources/img" var="img" />
 <spring:url value="/resources/fonts" var="fonts" />
 
 
@@ -28,9 +28,8 @@
 
 <style>
 body {
-	
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
 	background-size: cover;
-	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
 }
 
@@ -48,16 +47,15 @@ body {
 .metro {
 	display: inline-block;
 	padding: 10px;
-	margin: 10px;
-	background: #0AF;
+	margin: 20px;
+	background:#4fbfa8;
 	/* Font styles */
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	vertical-align: middle;
-}
-
+} 
 .progress {
 	width: 70%;
 }

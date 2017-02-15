@@ -59,27 +59,26 @@
 
                         <h4>Top categories</h4>
 
-                        <h5>Men</h5>
+                        <h5>Fiction</h5>
 
                         <ul>
-                            <li><a href="category">T-shirts</a>
+                            <li><a href="category">Sci-Fi</a>
                             </li>
-                            <li><a href="category">Shirts</a>
+                            <li><a href="category">Action</a>
                             </li>
-                            <li><a href="category">Accessories</a>
+                            <li><a href="category">Western</a>
                             </li>
                         </ul>
 
-                        <h5>Ladies</h5>
+                        <h5>Cooking</h5>
                         <ul>
-                            <li><a href="category">T-shirts</a>
+                            <li><a href="category">Nigella</a>
                             </li>
-                            <li><a href="category">Skirts</a>
+                            <li><a href="category">Jaime</a>
                             </li>
-                            <li><a href="category">Pants</a>
+                            <li><a href="category">Rachel</a>
                             </li>
-                            <li><a href="category">Accessories</a>
-                            </li>
+                            
                         </ul>
 
                         <hr class="hidden-md hidden-lg">
@@ -113,16 +112,16 @@
 
                         <h4>Get the news</h4>
 
-                        <p class="text-muted">Learn all about our new Collections and special Discounts .</p>
+                        <p class="text-muted">Learn all about our new Collections and Writer Blogs .</p>
 
                         <form>
-                            <div class="input-group">
+                             <div class="input-group">
 
-                                <input type="text" class="form-control">
+                              
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+			    <a href="post" class="btn btn-primary"> Read Our Blog !</a>
 
 			</span>
 

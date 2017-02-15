@@ -15,17 +15,56 @@
 <html lang="en">
 <style type="text/css">
 body {
-	background: url("${img}/background2.jpg") no-repeat 0px 0px;
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
 	background-size: cover;
-	
 	background-attachment: fixed;
 }
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #ccc;
+}
+.tg td {
+	
+	
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #fff;
+}
+.tg th {
+	
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #f0f0f0;
+}
+.tg .tg-4eph {
+	background-color: #f9f9f9
+}
+
+
 </style>
 <body>
 <%@ include file = "shared/header.jsp" %>
+<div id="all">
+	 <div id="content">
+            <div class="container">
+  
+   <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3"> 
+  
+
 <h3>List Of Suppliers</h3>
 
-<table class="tg" border=1 align="center">
+<table class="tg" >
 	<tr>
 		<th width="80">Supplier ID</th>
 		<th width="120">Supplier Name</th>
@@ -45,6 +84,10 @@ body {
 		</tr>
 	</c:forEach>
 </table>
+</div>
+</div>
+</div>
+</div>
 
 	<%@ include file = "shared/footer.jsp" %>
 </body>

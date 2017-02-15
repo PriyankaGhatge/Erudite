@@ -13,6 +13,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<style>
+#map {width: 100%;height: 400px;}
+.mapContainer{width:50%;position: relative;}
+.mapContainer a.direction-link {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100010;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 8px 20px 8px 50px;
+    background: #0094de;
+    background-image: url('direction-icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.mapContainer a.direction-link:hover {
+    text-decoration: none;
+    background: #0072ab;
+    color: #FFF;
+    background-image: url('direction-icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
 <body>
   <%@ include file = "shared/header.jsp" %>
 
@@ -80,19 +110,20 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-map-marker"></i> Address</h3>
-                                <p>13/25 New Avenue
-                                    <br>New Heaven
-                                    <br>45Y 73J
-                                    <br>England
-                                    <br>
-                                    <strong>Great Britain</strong>
-                                </p>
+                                <p><strong>Erudite Global Inc</strong>
+                            <br>Orion Business Park
+                            <br>Sector 12
+                            <br>Worli
+                            <br>Maharashtra
+                            <br>
+                            <strong>India</strong>
+                        </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-phone"></i> Call center</h3>
-                                <p class="text-muted">This number is toll free if calling from Great Britain otherwise we advise you to use the electronic form of communication.</p>
-                                <p><strong>+33 555 444 333</strong>
+                                <p class="text-muted">This number is toll free if calling from India otherwise we advise you to use the electronic form of communication.</p>
+                                <p><strong>1800 600 900</strong>
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
@@ -110,93 +141,23 @@
                         <!-- /.row -->
 
                         <hr>
-
-                        <div id="map">
-
+                        
+				
+                        <div id="map"> 
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.314190989595!2d72.81799631444733!3d19.005871987128213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf6ff514282f%3A0x975c5aa649842060!2sSiemens+Limited!5e0!3m2!1sen!2s!4v1486998513368"
+						 width="750" height="400" align="middle" frameborder="4" style="border:4" allowfullscreen></iframe>
                         </div>
-
-                        <hr>
-                        <h2>Contact form</h2>
-
-                        <form>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="firstname">Firstname</label>
-                                        <input type="text" class="form-control" id="firstname">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="lastname">Lastname</label>
-                                        <input type="text" class="form-control" id="lastname">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" class="form-control" id="subject">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea id="message" class="form-control"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send message</button>
-
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </form>
-
-
+                        
+                       <br>
+                       <hr>
+                       </div>
                     </div>
-
-
+                  </div>
                 </div>
-                <!-- /.col-md-9 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#content -->
-        </div>
+              </div> 
 
- <%@ include file = "shared/footer.jsp" %>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-
-    <script>
-        function initialize() {
-            var mapOptions = {
-                zoom: 15,
-                center: new google.maps.LatLng(49.1678136, 16.5671893),
-                mapTypeId: google.maps.MapTypeId.ROAD,
-                scrollwheel: false
-            }
-            var map = new google.maps.Map(document.getElementById('map'),
-                mapOptions);
-
-            var myLatLng = new google.maps.LatLng(49.1681989, 16.5650808);
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map
-            });
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
+   
+<%@ include file = "shared/footer.jsp" %>
 
 </body>
 

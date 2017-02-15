@@ -66,8 +66,9 @@
 
 		<security:intercept-url pattern="/edituser/**"
 			access="hasAnyRole('ROLE_ADMIN')" />
+			 -->
 
-		<security:intercept-url pattern="/order/{cartId}/**"
+		<security:intercept-url pattern="/order/{cart_id}/**"
 			access="hasAnyRole('ROLE_USER')" />
 
 		<security:intercept-url pattern="/checkout**"
@@ -75,7 +76,7 @@
 
 		<security:intercept-url pattern="/cart/**"
 			access="hasAnyRole('ROLE_USER')" />
-			  -->
+			 
 			
 		<security:form-login authentication-failure-url="/loginerror"
 			login-processing-url="/j_spring_security-check" password-parameter="j_User_password"

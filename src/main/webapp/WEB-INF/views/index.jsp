@@ -17,7 +17,7 @@
 </head>
 <style type="text/css">
 body {
-	background: url("${img}/background1.jpg") no-repeat 0px 0px;
+	
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -117,25 +117,30 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/Got.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">George RR Martin</a></h3>
+                                    <h3><a href="listproduct">George RR Martin</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
+                                 <div class="ribbon new">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
                             </div>
                             <!-- /.product -->
                         </div>
@@ -145,43 +150,26 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/Shiva.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Amish Tripathi</a></h3>
+                                    <h3><a href="listproduct">Amish Tripathi</a></h3>
                                     <p class="price"> </p>
                                 </div>
                                 <!-- /.text -->
-
-                                <div class="ribbon sale">
-                                    <div class="theribbon">SALE</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                                
                             </div>
                             <!-- /.product -->
                         </div>
@@ -191,22 +179,22 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/danbrown.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Dan Brown</a></h3>
+                                    <h3><a href="listproduct">Dan Brown</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
@@ -219,22 +207,22 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/HP.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Harry Potter</a></h3>
+                                    <h3><a href="listproduct">Harry Potter</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
@@ -247,31 +235,27 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/chetan.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Chetan Bhagat</a></h3>
+                                    <h3><a href="listproduct">Chetan Bhagat</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
 
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                                
                             </div>
                             <!-- /.product -->
                         </div>
@@ -281,31 +265,27 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/tattoo.jpeg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Stieg Larsson</a></h3>
+                                    <h3><a href="listproduct">Stieg Larsson</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
 
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                               
 
                             </div>
                             <!-- /.product -->
@@ -317,43 +297,27 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/Paulo.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Paulo Coelho</a></h3>
+                                    <h3><a href="listproduct">Paulo Coelho</a></h3>
                                     <p class="price"> </p>
                                 </div>
                                 <!-- /.text -->
 
-                                <div class="ribbon sale">
-                                    <div class="theribbon">SALE</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                               
                             </div>
                             <!-- /.product -->
                         </div>
@@ -363,22 +327,22 @@ body {
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
-                                            <a href="detail">
+                                            <a href="listproduct">
                                                 <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="detail" class="invisible">
+                                <a href="listproduct" class="invisible">
                                     <img src="${img}/enidblyton.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail">Enid Blyton</a></h3>
+                                    <h3><a href="listproduct">Enid Blyton</a></h3>
                                     <p class="price"></p>
                                 </div>
                                 <!-- /.text -->
@@ -396,35 +360,7 @@ body {
 
             <!-- *** HOT END *** -->
 
-            <!-- *** GET INSPIRED ***
- _________________________________________________________ -->
-            <div class="container" data-animate="fadeInUpBig">
-                <div class="col-md-12">
-                    <div class="box slideshow">
-                        <h3>Get Inspired</h3>
-                        <p class="lead">Get the inspiration from our world class designers</p>
-                        <div id="get-inspired" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <a href="#">
-                                    <img src="${img}/getinspired1.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="${img}/getinspired2.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="${img}/getinspired3.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- *** GET INSPIRED END *** -->
-
+          
             <!-- *** BLOG HOMEPAGE ***
  _________________________________________________________ -->
 
@@ -433,7 +369,7 @@ body {
                     <div class="col-md-12">
                         <h3 class="text-uppercase">From our blog</h3>
 
-                        <p class="lead">What's new in the world of fashion? <a href="blog">Check our blog!</a>
+                        <p class="lead">What's new in the world of Literature? <a href="blog">Check our blog!</a>
                         </p>
                     </div>
                 </div>
@@ -446,12 +382,12 @@ body {
                     <div id="blog-homepage" class="row">
                         <div class="col-sm-6">
                             <div class="post">
-                                <h4><a href="post">Fashion now</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
+                                <h4><a href="post">Importance Of Reading</a></h4>
+                                <p class="author-category">By <a href="post">JJ Wong </a> in <a href="post">Articles</a>
                                 </p>
                                 <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                <p class="intro">Everyone knows that reading is important, but have you ever asked yourself why that is so? In this post, I will list out 8 reasons why reading is important. 
+                        I hope you can really find out the reason why reading is so important for you, so you can get a brand new desire to explore the world of reading.</p>
                                 <p class="read-more"><a href="post" class="btn btn-primary">Continue reading</a>
                                 </p>
                             </div>
@@ -459,12 +395,12 @@ body {
 
                         <div class="col-sm-6">
                             <div class="post">
-                                <h4><a href="post">Who is who - example blog post</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
+                                <h4><a href="post">Surging popularity of E-reading</a></h4>
+                                <p class="author-category">By <a href="post">Anupama Roy</a> in <a href="post">About Minimal</a>
                                 </p>
                                 <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                <p class="intro">For all those readers jealous of <strong>Belle's Library</strong>, e-reading is the next Best thing for you,
+                        As you don't have to worry about getting a new Book Case for your new Collection,just keep them on your E-Reader. Come and see the pros listed and decide for yourself.</p>
                                 <p class="read-more"><a href="post" class="btn btn-primary">Continue reading</a>
                                 </p>
                             </div>

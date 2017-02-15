@@ -13,6 +13,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body {
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
 <body align = "center">
    
     <%@ include file = "shared/header.jsp" %>
@@ -32,8 +39,10 @@
 
                 </div>
 
-                <div class="col-md-6">
-                    <div class="box">
+                <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+
+   					 <div class="txt-center">
+                        
                         <h1>Supplier</h1>
 
                         <p class="lead">Need to do some changes ?</p>
@@ -46,12 +55,12 @@
                             
                             <div class="form-group">
                                 <label for="name">Supplier Name</label>
-                                <input type="text"  value="Supplier Name" name="supp_name" class="form-control" id="name" path="supp_name" />
+                                <input type="text"   name="supp_name" class="form-control" id="name" path="supp_name" />
                                
                             </div>
                             <div class="form-group">
                                 <label for="email">Supplier Address</label>
-                                <input type="text" value="Supplier Address" name="supp_address" class="form-control" id="address" path="supp_address">
+                                <input type="text"  name="supp_address" class="form-control" id="address" path="supp_address">
                            </div>
                             
                             <div class="text-center">

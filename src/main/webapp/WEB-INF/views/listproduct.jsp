@@ -18,25 +18,71 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Products list</title>
+<style type="text/css">
+body {
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.tg {
+	
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #ccc;
+}
+.tg td {
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #fff;
+}
+.tg th {
+	
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #f0f0f0;
+}
+.tg .tg-4eph {
+	background-color: #f9f9f9
+}
+
+</style>
 </head>
 
 <%@include file="shared/header.jsp"%>
 
 <body ng-app="prodapp" ng-controller="myprodController"
-	ng-init="listProduct()">
+	ng-init="listProduct()"> 
 
 	<div>
 		<br>
 		<div align="center">
 			<input type="text" ng-model="searchConditionprod"
 				placeholder="Search Products....">
+				
 		</div>
+    <br>
 
-
-		<div class="content">
+		<!-- <div class="content">
 			<div class="login">
 				<div class="main-agi">
-					<div class="form-w3agile">
+					<div class="form-w3agile"> -->
+					
+	<div class="content">
+		 <div class="container">
+		 
+		  <div class="col-md-12">
+					 <div class="box">
+					
 						<h3>Product List</h3>
 						<div class="table-responsive">
 							<table class="tg">
@@ -92,7 +138,7 @@
 								</tr>
 
 							</table>
-
+<br>
 						</div>
 					</div>
 				</div>

@@ -12,33 +12,65 @@
 <spring:url value="/resources/css/fonts" var="fonts" />
 <!DOCTYPE html>
 <html lang="en">
-<style>
+<style type="text/css">
 body {
-	background: url("${img}/background2.jpg") no-repeat 0px 0px;
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
 	background-size: cover;
 	background-attachment: fixed;
-	}
-table {
-    
-    border-collapse: collapse;
-    width: 100%;
 }
 
-th, td, {
-    text-align: center;
-    padding: 8px;
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #ccc;
 }
-
- tr:nth-child(even){background-color: #f2f2f2}	
+.tg td {
+	
+	
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #fff;
+}
+.tg th {
+	
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #ccc;
+	color: #333;
+	background-color: #f0f0f0;
+}
+.tg .tg-4eph {
+	background-color: #f9f9f9
+}
 
 </style>
 
 <body>
 <%@ include file = "shared/header.jsp" %>
+
+ <div id="all">
+
+        <div id="content">
+            <div class="container">
+   
+  
+   
+   <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+
+	
+
 <h3>List Of Categories</h3>
 
-<table  border=1   class="w3-table-all w3-centered">
-	<tr>
+<table class="tg" >
+	<tr >
 		<th width="80">Category ID</th>
 		<th width="120">Category Name</th>
 		<th width="120">Category Description</th>
@@ -46,7 +78,7 @@ th, td, {
 		<th width="60">Delete</th>
 	</tr>
 	<c:forEach items="${categoryList}" var="cat">
-		<tr>
+		<tr >
 
 			<td><c:out value="${cat.category_id}" /></td>
 			<td><c:out value="${cat.category_name}" /></td>
@@ -57,6 +89,11 @@ th, td, {
 		</tr>
 	</c:forEach>
 </table>
+</div>
+</div>
+</div>
+</div>
+
 
 	<%@ include file = "shared/footer.jsp" %>
 </body>

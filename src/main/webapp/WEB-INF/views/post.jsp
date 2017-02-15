@@ -39,51 +39,63 @@
 
                     <div class="box">
 
-                        <h1>Fashion now</h1>
-                        <p class="author-date">By <a href="#">John Slim</a> | June 20, 2013</p>
-                        <p class="lead">This is the lead paragraph of the article. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
+                        <h1>Importance Of Reading</h1>
+                        <p class="author-date">By <a href="#">JJ Wong</a> | June 20, 2013</p>
+                        <p class="lead">Everyone knows that reading is important, but have you ever asked yourself why that is so? In this post, I will list out 8 reasons why reading is important. 
+                        I hope you can really find out the reason why reading is so important for you, so you can get a brand new desire to explore the world of reading.</</p>
 
                         <div id="post-content">
-                            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-                                semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean
-                                fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                            <p><strong>Reading is a starting step of many things</strong>, which build a more solid stairs for you to climb up achieving something big out there.
+                            The art of reading is in great part that of acquiring a better understanding of life from one’s encounter with it in a book.
+                            Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers. </p>
 
                             <p>
                                 <img src="${img}/blog2.jpg" class="img-responsive" alt="Example blog post alt">
                             </p>
 
-                            <h2>Header Level 2</h2>
+                            <h2>Why Read ?</h2>
 
                             <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
+                                <li>Expose Yourself to New Things.</li>
+                                <li>Self Improvement</li>
+                                <li>Improve understanding</li>
+                                <li>Preparation to Action</li>
+                                <li>Gain Experience from Other People</li>
+                                <li>Tools of Communicating</li>
+                                <li>Connecting Your Brain</li>
+                                <li>Boost Imagination and Creativity</li>
+                                
                             </ol>
 
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada
-                                    tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                                <p>Through reading, you expose yourself to new things, new information, new ways to solve a problem, and new ways to achieve one thing. 
+                                Who knows – you might find your new hobbies within it..</p>
                             </blockquote>
 
-                            <h3>Header Level 3</h3>
+                            <h1>Surging popularity of E-reading</h1>
 
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-                                condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
-                                eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                            <p>Books have finally made their way to the digital age. The introduction of e-books has completely transformed the way that people read and publish books. An e-book is an electronic version of a book, typically read on an e-reader. 
+                            If you are writing a book, plan to hire a ghostwriter or are considering self-publishing, it is important to decide if you will make your book available in electronic format.</p>
+
+							<h2>Pros of E-Reading</h2>
 
                             <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
+                                <li>Easily Readable</li>
+                                <li>Cost Effective</li>
+                                <li>They Double as Audiobooks</li>
+                                <li>Mobility</li>
+                                <li>Environmentally Friendly</li>
                             </ul>
 
                             <p>
                                 <img src="${img}/blog.jpg" class="img-responsive" alt="Example blog post alt">
                             </p>
 
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-                                condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
-                                eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                            <p>Easily Readable - Because e-books are read using a computer or e-reader, their format is more fluid than that of traditional books. Readers can alter the size of the font or zoom in on specific sections. This makes the format ideal for young children and people who have trouble seeing.
+                             In addition, readers don’t have to worry about the lighting conditions.E-readers provide a lit background so that books can be enjoyed easily no matter where you are.
+                             Mobility - Readers who opt for the e-book format can easily carry hundreds of books with them. This is ideal for people who travel often. Rather than picking just one book to bring along, readers can choose from a variety of e-books.
+                             Environmentally Friendly - The introduction of e-books has drastically reduced the number of pages that are actually being printed. E-books are environmentally friendly because they do not require any paper or ink. 
+                             If you’re an eco-conscious reader, you can still have an extensive library and not feel guilty about it. </p>
 
                         </div>
                         <!-- /#post-content -->

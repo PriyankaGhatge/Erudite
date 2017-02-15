@@ -15,11 +15,13 @@
 <html lang="en">
 <style>
 body {
-	background: url("${img}/background2.jpg") no-repeat 0px 0px;
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
 	background-size: cover;
-	
 	background-attachment: fixed;
 }
+
+
+
 </style>
 <body>
    
@@ -30,11 +32,12 @@ body {
         <div id="content">
             <div class="container">
    
-   
-   <div class="col-md-6">
-                    <div class="box">
-                        <h1>Login</h1>
+    <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
 
+    <div class="txt-center">
+    
+                        <h1>Login</h1>
+							</div>
                         <p class="lead">Already our customer?</p>
                         <p class="text-muted">With Login you can BUY all the Books you wanted,on your Shelf !!! </p>
 						<p class="text-muted">If you have any questions, please feel free to <a href="contact">contact us</a>, our customer service center is working for you 24/7.</p>
@@ -70,6 +73,6 @@ body {
             <!-- /.container -->
         </div>
         <!-- /#content -->
-</div>
+
 
        <%@ include file = "shared/footer.jsp" %>

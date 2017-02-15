@@ -109,8 +109,8 @@ input[type=text] {
 									<td>{{cartItem.product.productprice}}</td>
 									<td>{{cartItem.totalprice}}</td>
 									<td><a href="#" class="label label-danger"
-										ng-click="removeFromCart(cartItem.cartitem_id)"> <span
-											class="glyphicon glyphicon-remove"></span> Remove
+										ng-click="removeFromCart(cartItem.cartitem_id)"> <i class="fa fa-trash-o"></i>
+										 Remove
 									</a></td>
 								</tr>
 							</table>

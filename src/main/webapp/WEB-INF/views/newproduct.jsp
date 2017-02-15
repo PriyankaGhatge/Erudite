@@ -13,28 +13,37 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<body align ="center">
+<style>
+body {
+	background: url("${img}/background7.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
+<body >
 <%@ include file = "shared/header.jsp" %>
 
  <div id="all">
  <div class="content">
-		<!--login-->
-		<div class="login">
+		  <!--login-->
+		<!-- <div class="login">
 			<div class="main-agileits">
-				<div class="form-w3agile form1">
+				<div class="form-w3agile form1">  --> 
 					 <div class="container">
 					  <div class="col-md-12">
 
                   			  <ul class="breadcrumb">
            		                  <li><a href="#">Home</a>
             		                  </li>
-                		          <li><a href="#">New account / Sign in</a></li>
+                		          <li><a href="#">Admin</a></li>
                    			  </ul>
 
                				 </div>
 
-					<div class="col-md-6">
-                    <div class="box">
+		<div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+				
+				<div class="txt-center">
+					
 					<h1>Add Product</h1>
 
 					<p class="lead">Need to make some changes ?</p>
@@ -49,7 +58,7 @@
 						<div class="form-group">
 						<form:label path="productname">Product Name</form:label>
 						<div class="key">
-						<form:input type="text" path="productname" name="productname" />
+						<form:input type="text" path="productname" name="productname" class="form-control"/>
 						<div class="clearfix"></div>
 						</div>
 						</div>
@@ -58,7 +67,7 @@
 						<div class="form-group">
 						<form:label path="productprice">Product Price</form:label>
 						<div class="key">
-						<form:input type="text" path="productprice" name="productprice" />
+						<form:input type="text" path="productprice" name="productprice" class="form-control"/>
 						<div class="clearfix"></div>
 						</div>
 						</div>
@@ -68,7 +77,7 @@
 						<div class="form-group">
 						<form:label path="productdescription">Product Description</form:label>
 						<div class="key">
-						<form:input type="text" path="productdescription" name="productdescription" />
+						<form:input type="text" path="productdescription" name="productdescription" class="form-control"/>
 						<div class="clearfix"></div>
 						</div>
 						</div>
@@ -96,6 +105,9 @@
 						<form:input class="form-control" type="file" path="image" name="image"/>
 						<div class="clearfix"></div>
 						</div>
+						
+						<br>
+						
 						<div class="text-center">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Manage</button>
                         </div>
@@ -103,9 +115,9 @@
 					</form:form>
 				     </div>
 			      </div>
-		        </div>
+		   <!--      </div>
 	         </div>
-	      </div>
+	      </div> -->
 	    </div>
 	 </div>
 	        
